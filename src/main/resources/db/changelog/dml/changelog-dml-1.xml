@@ -1,0 +1,14 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+	<changeSet author="admin" id="DML-1-100">
+		<loadData tableName="roles" file="classpath:/db/changelog/data/dml-1-roles.csv" />
+		<loadData tableName="users" file="classpath:/db/changelog/data/dml-1-users.csv" />
+		<loadData tableName="authorities" file="classpath:/db/changelog/data/dml-1-authorities.csv" />
+	</changeSet>
+
+</databaseChangeLog>

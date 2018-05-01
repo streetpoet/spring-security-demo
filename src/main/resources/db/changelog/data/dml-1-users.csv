@@ -1,0 +1,2 @@
+"id","username","email","password","enabled"
+1,"streetpoet","streetpoet@163.com","{bcrypt}$2a$10$SBLQXMtJbMEqZf8TwowctOxklabH6FuvjG4B34fj/LF5jLvWlsgia",1

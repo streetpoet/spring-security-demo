@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+      use-new-id-generator-mappings: false
+    open-in-view: true
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
