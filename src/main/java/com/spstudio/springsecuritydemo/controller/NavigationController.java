@@ -7,8 +7,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class NavigationController {
 
 	@GetMapping("/userSetting")
-	public String login() {
+	public String us() {
 		return "userSetting";
 	}
 
+	@GetMapping("/userSetting2")
+	public String us2() {
+		return "userSetting2";
+	}
+
+	@GetMapping("/login2")
+	public String login2() {
+		return "login2";
+	}
 }
