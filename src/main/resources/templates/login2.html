@@ -3,13 +3,12 @@
 <head>
 <title>Demo</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 	<h1>Home Credit Custom Login Page</h1>
 	<hr />
-	<form name='f' action='/login' method='POST'>
+	<form name='f' th:action="@{/login}" method='POST'>
 		<table>
 			<tr>
 				<td>User:</td>
@@ -20,8 +19,9 @@
 				<td><input type='password' name='password' /></td>
 			</tr>
 			<tr>
-				<td colspan='2'><input name="submit" type="submit"
-					value="Login" /></td>
+				<td colspan='2'>
+					<input name="submit" type="submit" value="Login" />
+				</td>
 			</tr>
 		</table>
 	</form>
