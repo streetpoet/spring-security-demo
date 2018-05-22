@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class NavigationController {
 
+    @GetMapping("/")
+    public String home() {
+        return "index";
+    }
+    
 	@GetMapping("/userSetting")
 	public String us() {
 		return "userSetting";

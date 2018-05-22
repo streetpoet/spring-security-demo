@@ -13,6 +13,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.util.CollectionUtils;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.spstudio.springsecuritydemo.entity.User;
 import com.spstudio.springsecuritydemo.repository.UserRepository;
@@ -106,4 +107,5 @@ public class HttpSecurityConfig {
 			// @formatter:on
 		}
 	}
+	
 }
